@@ -41,3 +41,23 @@ select trim('  Oracle    ') from dual;
 --función replace--
 --sustitu caracteres en un cadena--
 select replace('www.oracle.com','w','p') from dual;
+
+--Función Substring--
+--devuelve un segmento de una cadena de texto, segun parametros--
+--Tambien admite parametros negativos 
+--Psitivos de izquierda a derecha
+--negativos de derecha a izquiera
+select substr('www.oracle.com',1,10) from dual;
+select substr('www.oracle.com',-3) from dual;
+
+--Función length--
+--Devuelve el tamaño de la cadena--
+select length('www.oracle.com') from dual;
+
+--Función instr--
+--Localizacion de caracteres o fraces de un string especifico--
+select instr('Curso de oracle','Curso') from dual;
+
+--Funcion translate--
+--Permite sustituir letras o caracteres dentro una cadena--
+select translate('curso de oracle','aoe','xyz') from dual;
